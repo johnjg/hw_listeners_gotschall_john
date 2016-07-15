@@ -2,15 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-
+    <title>Custom</title>
+    <meta name="description" content="Custom">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+    <div class="container">
 
+        <h1>Do Not Click This Header!</h1>
+
+        <p><a href="#">Do not click this link!</a></p>
+
+        <img src="img/button.png" alt="button" />
+
+        <p>This is paragraph text. The button above is completely harmless, but it might do something nifty if you hover your cursor over it.</p>
+
+        <form name="contact" method="post" action="mailto:contact@johnjg.com?subject=HW%20Form%20Results" id="contact">
+            <label for="inputvalue">This is a form field:</label>
+            <input type="text" id="inputvalue" name="inputvalue" placeholder="Type Here!" />
+            <input type="submit" name="submit" id="submit" value="Do Not Submit!" />
+        </form>
+
+    </div>
 
     <script src="js/main.js"></script>
 </body>
