@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-
+    <title>Form</title>
+    <meta name="description" content="Form">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <div class="container">
-
+        <form name="contact" method="post" action="mailto:contact@johnjg.com?subject=HW%20Form%20Results" id="contact">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" size="30" placeholder="First Name" />
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" size="30" placeholder="Last Name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" size="30" placeholder="Email" />
+            <label for="comments">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            <input type="submit" name="submit" id="submit" value="Submit" />
+            <input type="reset" name="reset" id="reset" value="Reset" />
+        </form>
     </div>
 
     <script src="js/main.js"></script>
